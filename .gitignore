@@ -13,8 +13,9 @@ ENV/
 *.pickle
 *.h5
 *.hdf5
+# Ignore CSV files except in data folder (data is small enough to commit)
 *.csv
-!data/*.csv
+!data/**/*.csv
 *.log
 .vscode/
 .idea/
