@@ -47,7 +47,7 @@ The project demonstrates that:
 
 The dataset is highly imbalanced, with a very small proportion of fraudulent transactions compared to legitimate ones.
 
-XGBoost achieved the highest overall performance, with strong precision, recall, and F1-score, making it the most reliable model for detecting fraudulent transactions.
+Logistic Regression - Baseline achieved the highest overall performance, with strong precision, recall, and F1-score, making it the most reliable model for detecting fraudulent transactions.
 
 Handling class imbalance using SMOTE significantly improved recall without sacrificing too much precision, ensuring fewer fraud cases are missed.
 
@@ -93,16 +93,27 @@ Ensure the dataset is placed in the appropriate directory as referenced in the n
 fraud_detection_project/
 │
 ├── data/
-│   └── [dataset files]
+│   ├── processed/
+│   │   ├── provider_features_final_train/
+│   │   └── provider_features_train.csv
+│   └── raw/
+│       ├── Test.csv
+│       ├── Test_Beneficiarydata.csv
+│       ├── Test_Inpatientdata.csv
+│       ├── Test_Outpatientdata.csv
+│       ├── Train_Beneficiarydata.csv
+│       ├── Train_Inpatientdata.csv
+│       ├── Train_labels.csv
+│       └── Train_Outpatientdata.csv
+│
 ├── notebooks/
-│   └── fraud_detection.ipynb
-├── src/
-│   ├── preprocessing.py
-│   ├── models.py
-│   └── evaluation.py
-├── requirements.txt
+│   ├── 01_data_exploration_and_feature_engineering.ipynb
+│   ├── 02_modeling.ipynb
+│   └── 03_Evaluation.ipynb
+│
+├── .gitignore
 ├── README.md
-└── .gitignore
+└── requirements.txt
 ```
 
 *For detailed implementation and methodology, please refer to the Jupyter notebook and source code.*
