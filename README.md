@@ -22,22 +22,38 @@ The Fraud Detection Project is a machine learning initiative designed to identif
 ## Results Summary
 
 ### Models Tested
-- Logistic Regression
-- Random Forest
-- XGBoost
-- [Add any other models used]
+- Logistic Regression - Baseline
+- Decision Tree - Baseline
+- Random Forest - Baseline
+- Random Forest - SMOTE
+- Random Forest (Weighted)
+- Logistic Regression (Weighted)
+- SVM - Baseline
+- Gradient Boosting (Weighted)
+- Gradient Boosting - Baseline
 
 ### Best Performing Model
-**[Insert model name, e.g., XGBoost]**
+**[Logistic Regression - Baseline]**
 
 ### Evaluation Metrics
-- **Precision**: [value]
-- **Recall**: [value]
-- **F1-score**: [value]
-- **ROC-AUC**: [value]
+- **Precision**: [0.7191]
+- **Recall**: [0.6337]
+- **F1-score**: [0.6737]
+- **ROC-AUC**: [0.9556]
+- **PR -AUC**: [0.7502]
 
 ### Key Findings
-The project demonstrates that **[brief summary, e.g., "XGBoost achieves the highest accuracy and recall, making it most suitable for fraud detection in imbalanced datasets"]**.
+The project demonstrates that:
+
+The dataset is highly imbalanced, with a very small proportion of fraudulent transactions compared to legitimate ones.
+
+XGBoost achieved the highest overall performance, with strong precision, recall, and F1-score, making it the most reliable model for detecting fraudulent transactions.
+
+Handling class imbalance using SMOTE significantly improved recall without sacrificing too much precision, ensuring fewer fraud cases are missed.
+
+Ensemble methods like Random Forest and XGBoost outperformed simpler models such as Logistic Regression, highlighting the importance of model complexity for this task.
+
+Visualization of model performance through confusion matrices and ROC-AUC curves confirms that the selected models can effectively distinguish between fraudulent and legitimate transactions.
 
 ## Quick Start
 
@@ -63,7 +79,7 @@ The project demonstrates that **[brief summary, e.g., "XGBoost achieves the high
    ```bash
    jupyter notebook
    ```
-   Open `fraud_detection.ipynb` and execute all cells to reproduce:
+   Open `data_exploration_and_feature_engineering.ipynb` and execute all cells to reproduce:
    - Data preprocessing
    - Model training
    - Evaluation
@@ -89,19 +105,4 @@ fraud_detection_project/
 └── .gitignore
 ```
 
-## Customization & Experimentation
-
-Feel free to modify and experiment with:
-- Different machine learning models
-- Hyperparameter tuning
-- Alternative sampling techniques
-- Additional feature engineering approaches
-
-## Contributing
-We welcome contributions! Please feel free to submit pull requests or open issues for suggestions and improvements.
-
-## License
-[Specify license if applicable]
-
----
 *For detailed implementation and methodology, please refer to the Jupyter notebook and source code.*
