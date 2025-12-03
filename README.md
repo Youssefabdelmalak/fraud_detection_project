@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The Healthcare Provider Fraud Detection Project is a machine learning initiative designed to identify fraudulent healthcare providers in Medicare claims data. This work was developed for the Centers for Medicare & Medicaid Services (CMS) to assist investigators in surfacing high-risk providers for further review. Our primary goal is to develop robust models that can accurately distinguish between legitimate and fraudulent providers while minimizing false positives and maximizing detection rates. The project covers data preprocessing, feature engineering, class imbalance handling, and comparative analysis of multiple machine learning algorithms.
+The Healthcare Provider Fraud Detection Project is a machine learning initiative designed to identify fraudulent healthcare providers in Medicare claims data. This work was developed for the Centers for Medicare & Medicaid Services (CMS) to assist investigators in surfacing high-risk providers for further review. Our primary goal is to develop robust models that can accurately distinguish between legitimate and fraudulent providers while minimizing false positives and maximizing detection rates The project covers data preprocessing, feature engineering, class imbalance handling, and comparative analysis of multiple machine learning algorith
 
 **Problem Statement:** Healthcare fraud costs the U.S. healthcare system over $68 billion annually. CMS can currently only investigate a small fraction of suspicious cases, allowing many fraudulent activities to go undetected. Existing systems rely on basic rule-based methods that capture obvious patterns but fail to identify more sophisticated fraud schemes.
 
